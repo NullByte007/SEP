@@ -25,6 +25,7 @@
         <sonar.language>java</sonar.language>
 
         <sonar.coverage.exclusions>
+            src/main/java/com/telstra/config
             src/main/java/com/telstra/config/*
             src/main/java/com/telstra/controller/*
             src/main/java/com/telstra/dto/*
@@ -32,6 +33,15 @@
             src/main/java/com/telstra/model/*
             src/main/java/com/telstra/repository/*
             src/main/java/com/telstra/security/*
+
+            target/classes/com/telstra/config/*.class
+            target/classes/com/telstra/controller/*.class
+            target/classes/com/telstra/dto/*.class
+            target/classes/com/telstra/exceptions/*.class
+            target/classes/com/telstra/model/*.class
+            target/classes/com/telstra/repository/*.class
+            target/classes/com/telstra/security/*.class
+
         </sonar.coverage.exclusions>
 
     </properties>
