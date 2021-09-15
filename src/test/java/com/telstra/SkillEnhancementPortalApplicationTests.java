@@ -54,11 +54,9 @@ class SkillEnhancementPortalApplicationTests {
     @Test
     @Order(4)
     public void testFindByTagId() {
-        Long tag = 4L;
+        Long tag = 3L;
         Tag t = tagRepository.findById(tag).get();
         assertNotNull(t.getName());
-
-
     }
 
     @Test
