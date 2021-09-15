@@ -149,6 +149,27 @@
                         </goals>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <!--<systemPropertyVariables>
+                        <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
+                    </systemPropertyVariables>-->
+                    <excludes>
+
+                        <!-- This are the Class exclusions for SonarQube and Jacoco Code coverage -->
+
+                        <exclude>target/classes/com/telstra/config/*.class</exclude>
+                        <exclude>target/classes/com/telstra/controller/*.class</exclude>
+                        <exclude>target/classes/com/telstra/dto/*.class</exclude>
+                        <exclude>target/classes/com/telstra/exceptions/*.class</exclude>
+                        <exclude>target/classes/com/telstra/model/*.class</exclude>
+                        <exclude>target/classes/com/telstra/repository/*.class</exclude>
+                        <exclude>target/classes/com/telstra/security/*.class</exclude>
+                        
+                    </excludes>
+                </configuration>
+
+
             </plugin>
 
         </plugins>
